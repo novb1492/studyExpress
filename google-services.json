@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "612241374872",
+    "project_id": "tttt-cf9d9",
+    "storage_bucket": "tttt-cf9d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612241374872:android:fee92b68a220a466f25aed",
+        "android_client_info": {
+          "package_name": "com.de.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612241374872-ig4gg73m9vj0rf6s4vn7pv89i4lcbnul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuKBJ3PNUIuYlgNqxWwASU2ilOXeOYrGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612241374872-ig4gg73m9vj0rf6s4vn7pv89i4lcbnul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612241374872:android:545decb093e354f3f25aed",
+        "android_client_info": {
+          "package_name": "com.deno.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612241374872-ig4gg73m9vj0rf6s4vn7pv89i4lcbnul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuKBJ3PNUIuYlgNqxWwASU2ilOXeOYrGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612241374872-ig4gg73m9vj0rf6s4vn7pv89i4lcbnul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

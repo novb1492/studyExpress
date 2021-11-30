@@ -1,5 +1,5 @@
 var utillService=require('./utillService');
-
+var db=require("../db");
 exports.test = function (req) {
     console.log('sevice');
     var name='name';
