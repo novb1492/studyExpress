@@ -1,9 +1,18 @@
 var utillService=require('./utillService');
 var db=require("../db");
-exports.test = function (req) {
-    console.log('sevice');
-    var name='name';
-    return req.param(name);
+
+exports.test = function (req,res) {
+    console.log('test sevice');
+    try {
+        db.findBy("testTable","18").then(result=>{
+            res.json(result.data());
+        },(error)=>{
+            throw error;
+        });
+    } catch (error) {
+        res.json(utillService.makeJson(false,"정보조회실패"));
+    }
+ 
 }
 exports.testJson=function (req){
     console.log('testJson sevice');

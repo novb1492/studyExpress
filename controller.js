@@ -2,10 +2,7 @@ var testService=require('./services/testService');
 
 exports.testParm = function (req, res) {
     console.log('testParm controller');
-    var r=testService.test(req);
-    console.log('받아옴');
-    console.log(r);
-    res.end("Hello World");
+    testService.test(req,res);
 }
 exports.testJson = function (req, res) {
     console.log('testJson controller');
