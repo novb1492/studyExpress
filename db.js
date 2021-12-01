@@ -1,6 +1,6 @@
 const admin = require('firebase-admin'); 
 // firebase Admin 초기화 
-var serviceAccount = require("/Users/kimjunyoung/Desktop/studyExpress/tttt-cf9d9-firebase-adminsdk-1ilbf-a9904fabad.json");
+var serviceAccount = require("./tttt-cf9d9-firebase-adminsdk-1ilbf-a9904fabad.json");
 const firebaseAdmin = admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
