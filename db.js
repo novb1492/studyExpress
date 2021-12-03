@@ -6,6 +6,9 @@ const firebaseAdmin = admin.initializeApp({
 });
 
 exports.findBy=function(collectionName,id){
-    return firebaseAdmin.firestore().collection(collectionName).doc(id).get();
+    return firebaseAdmin.firestore().collection(collectionName).doc(id).get(); 
+}
+exports.insert=function(collection,id,json){
+    return firebaseAdmin.firestore().collection(collection).doc(id).set(json);
 }
  

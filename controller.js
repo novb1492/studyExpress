@@ -9,3 +9,7 @@ exports.testJson = function (req, res) {
     res.end( testService.testJson(req));
     
 }
+exports.testInsert=function(req,res){
+    console.log('testInsert controller');
+    testService.testInsert(req,res);    
+}

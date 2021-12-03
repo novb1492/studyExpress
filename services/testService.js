@@ -21,3 +21,19 @@ exports.testJson=function (req){
     console.log(json.name);
     return utillService.makeJson(true,'성공하였습니다');
 }
+exports.testInsert=function(req,res){
+    console.log("testinsert service");
+    var receiptData = req.body;
+    console.log(receiptData.transaction_id);
+
+    try {
+        db.insert("testTable",receiptData.transaction_id,receiptData).then(()=>{
+            return res.send(true);
+        },(error)=>{
+            throw error;
+        })
+    } catch (error) {
+        console.log(error);
+        return res.send(false);
+    }
+}
