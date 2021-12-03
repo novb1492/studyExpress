@@ -12,7 +12,7 @@ exports.testSelect = function (req,res) {
                 data.createDate = new Date(data.createDate);
                 rows.push(data);
             });
-            res.json(rows);
+            res.render("board.ejs",{ rows: rows });
         });
     } catch (error) {
         res.json(utillService.makeJson(false,"정보조회실패"));
