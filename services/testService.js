@@ -1,25 +1,23 @@
 var utillService=require('./utillService');
 var db=require("../db");
 
-exports.test = function (req,res) {
+exports.testSelect = function (req,res) {
     console.log('test sevice');
     try {
-        db.findBy("testTable","18").then(result=>{
-            res.json(result.data());
-        },(error)=>{
-            throw error;
+        db.findBy("testTable").then(result=>{
+            console.log("유저 수 : ", result.size);
+            var rows = [];
+            result.forEach((doc) => {
+                var data = doc.data();
+                data.createDate = new Date(data.createDate);
+                rows.push(data);
+            });
+            res.json(rows);
         });
     } catch (error) {
         res.json(utillService.makeJson(false,"정보조회실패"));
     }
  
-}
-exports.testJson=function (req){
-    console.log('testJson sevice');
-    console.log(req.body);
-    var json=req.body;
-    console.log(json.name);
-    return utillService.makeJson(true,'성공하였습니다');
 }
 exports.testInsert=function(req,res){
     console.log("testinsert service");

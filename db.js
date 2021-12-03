@@ -5,8 +5,8 @@ const firebaseAdmin = admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
 
-exports.findBy=function(collectionName,id){
-    return firebaseAdmin.firestore().collection(collectionName).doc(id).get(); 
+exports.findBy=function(collectionName){
+    return firebaseAdmin.firestore().collection(collectionName).orderBy("date","desc").get(); 
 }
 exports.insert=function(collection,id,json){
     return firebaseAdmin.firestore().collection(collection).doc(id).set(json);
