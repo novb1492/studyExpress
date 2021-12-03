@@ -15,10 +15,12 @@
 
     <ul>
         <%for(let i=0;i<rows.length;i++){%>
-            <li><%=rows[i].date%></li>
+            <li><%=rows[i].transaction_id%>,<%=rows[i].date%></li>
         <%}%>
     </ul>
 
     main
+    <a href="/?action=next">다음</a>
+    <a href="/?action=before">이전</a>
 </body>
 </html>
