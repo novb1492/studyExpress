@@ -24,7 +24,7 @@ exports.testJson=function (req){
 exports.testInsert=function(req,res){
     console.log("testinsert service");
     var receiptData = req.body;
-    console.log(receiptData.transaction_id);
+    console.log(receiptData);
 
     try {
         db.insert("testTable",receiptData.transaction_id,receiptData).then(()=>{
